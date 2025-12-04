@@ -14,6 +14,7 @@ services:
       - POSTGRES_HOST=db
     depends_on:
       - db
+      - filesync
     tty: true  # Allow the filesync to print output to the console
     volumes:
       - ./lib:/app/lib
